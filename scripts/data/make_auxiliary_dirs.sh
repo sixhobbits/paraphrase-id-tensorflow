@@ -1,7 +1,6 @@
-# cd to the path of this bash file
-parent_path=$( cd "$(dirname "${BASH_SOURCE}")" ; pwd -P )
-
-cd "$parent_path"
+# Note that this script should NOT be run directly 
+# (e.g. with `./make_auxiliary_dirs.sh`),
+# but rather run through the Makefile (with `make aux_dirs`)
 
 echo "Creating auxiliary directories"
 mkdir -p ./data/external
